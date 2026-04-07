@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land for Sale</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('./cover.jpg') center/cover;
+      color: white;
+      padding: 72px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 2.4rem;
+    }
+
+    .hero p {
+      margin: 0 auto;
+      max-width: 700px;
+      font-size: 1.05rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: -36px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #111827;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .detail-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .label {
+      font-size: .85rem;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #166534;
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .cta:hover {
+      background: #14532d;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: .95rem;
+      padding: 8px 16px 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.9rem; }
+      .container { margin-top: -24px; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>Duplex-Ready Land for Sale</h1>
+    <p>Build a duplex income property in Commerce City.</p>
+  </section>
+
+  <main class="container">
+
+    <section class="card">
+    <h2>Property Overview</h2>
+
+    <div class="details">
+        <div class="detail-box">
+        <div class="label">Location</div>
+        <div class="value">6565 & 6575 Monaco St, Commerce City, CO</div>
+    </div>
+
+    <div class="detail-box">
+      <div class="label">Lot 3</div>
+      <div class="value">0.184 Acres (8,015 sq ft)</div>
+      <div class="value">$150,000</div>
+    </div>
+
+    <div class="detail-box">
+      <div class="label">Lot 4</div>
+      <div class="value">0.183 Acres (7,072 sq ft)</div>
+      <div class="value">$150,000</div>
+    </div>
+
+    <div class="detail-box">
+      <div class="label">Zoning</div>
+      <div class="value">R-2 (Duplex Allowed)</div>
+    </div>
+  </div>
+
+  <p style="margin-top:12px; font-size:0.95rem; color:#6b7280;">
+    Lots 3 and 4 available – can be purchased individually or together.
+  </p>
+</section>
+
+    <!-- PLAT MAP -->
+    <section class="card">
+      <h2>Plat Map</h2>
+
+      <p style="font-size: 0.95rem; color: #6b7280;">
+        Lots 3 and 4 available – can be purchased individually or together.
+      </p>
+
+      <img 
+        src="./plat-marked.png" 
+        alt="Plat map of property" 
+        style="width:100%; border-radius:12px; border:1px solid #e5e7eb; margin-top:10px;"
+      />
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="card">
+      <h2>Photos</h2>
+      <div class="photos">
+        <img src="./google_1.png" />
+        <img src="./google_2.png" />
+        <img src="./google_3.png" />
+      </div>
+        <div style="margin-top: 14px; text-align: center;">
+          <a href="https://www.google.com/maps/place/6565+Monaco+St,+Commerce+City,+CO+80022/@39.8162576,-104.9156709,17z/data=!3m1!4b1!4m6!3m5!1s0x876c7a6d046fe08f:0xf462a3e381a1f926!8m2!3d39.8162535!4d-104.9130906!16s%2Fg%2F11fx10v_jn?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color:#166534; font-weight:600; text-decoration:underline; font-size:1.05rem;">View Property Location on Google Maps</a>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="card">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Easy road access</li>
+        <li>Close to shopping and amenities (Dick's Sporting Goods Park, Northfield)</li>
+        <li>Open buildable space</li>
+        <li>Mountain views</li>
+        <li>Utilities nearby</li>
+        <li>Great long-term investment potential</li>
+      </ul>
+    </section>
+
+    <!-- ZONING -->
+    <section class="card">
+    <h2>Zoning & Development</h2>
+    <p>
+        This property is zoned <strong>R-2 (Single-Family Attached Residential)</strong> under City of Commerce City regulations.
+    </p>
+    <p>R-2 zoning is intended for residential development and typically allows for:</p>
+    <ul>
+        <li>Duplex construction (two residential units)</li>
+        <li>Single-family attached housing</li>
+        <li>Standard residential improvements</li>
+    </ul>
+    <p>
+        This makes the lot well-suited for buyers looking to build a duplex or income-generating residential property.
+    </p>
+
+    <h2>Development Considerations</h2>
+    <p>
+        Development standards such as lot size, setbacks, building height, and parking requirements are governed by the official city code.
+    </p>
+    <p>Buyers should review:</p>
+    <ul>
+        <li>Minimum lot dimensions</li>
+        <li>Setback requirements (front, side, rear)</li>
+        <li>Parking and access requirements</li>
+        <li>Any subdivision or HOA restrictions (if applicable)</li>
+    </ul>
+
+    <h2>Official Resources</h2>
+    <ul>
+        <li><a href="https://library.municode.com/co/commerce_city/codes/land_development_code" target="_blank">View Land Development Code</a></li>
+        <li><a href="https://maps.c3gov.com" target="_blank">View Interactive Zoning Map</a></li>
+        <li><a href="https://www.c3gov.com/Business-Development/Developing-in-Commerce-City" target="_blank">City Development Information</a></li>
+    </ul>
+
+    <h2>Disclaimer</h2>
+    <p style="font-size: 0.9rem; color: #6b7280;">
+        All information provided is for general informational purposes only. Buyers are responsible for verifying zoning, permitted uses, and all development requirements with the City of Commerce City prior to purchase or development.
+    </p>
+    </section>
+
+    <!-- UTILITIES -->
+    <section class="card">
+    <h2>Utilities Notice</h2>
+    <p style="font-size: 0.95rem; color: #6b7280;">
+        Water and sewer tap fees have not been paid for this property. Buyers will be responsible for any applicable tap fees, connection costs, and related utility expenses required by the municipality at the time of development.
+        For reference, please see:
+        <a href="https://www.southadamswaterco.gov/business___development/tap_fees.php" target="_blank">
+        South Adams County Water & Sanitation District Tap Fees
+        </a>.
+    </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card">
+      <h2>Interested?</h2>
+      <p>Contact the seller:</p>
+      <p><strong>Name:</strong> John Seller</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <a class="cta" href="tel:+15551234567">Call Now</a>
+    </section>
+
+  </main>
+
+  <div class="footer">
+    Replace placeholder details with real property info.
+  </div>
+
+</body>
+</html>
