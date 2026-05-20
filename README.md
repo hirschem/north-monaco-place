@@ -37,7 +37,7 @@ Goals included:
 
 ## Live Project
 
-_Add deployment link if still active_
+northmonacoplace.com
 
 ## Status
 
